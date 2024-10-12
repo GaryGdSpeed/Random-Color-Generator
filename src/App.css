@@ -1,5 +1,6 @@
 #mainApp {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -9,12 +10,36 @@
   box-sizing: border-box;
 }
 
+#profileContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: none;
+  width: 10%;
+  min-width: 150px;
+  background-color: inherit;
+  margin-bottom: 1%;
+}
+
+.profile {
+  background-color: white;
+  color: black;
+  font-size: 1.8em;
+}
+
+.profileButton {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
 #buttonContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 20%;
   aspect-ratio: 1 / 1;
+  min-width: 150px;
   border-radius: 50%;
   background-color: black;
 }
@@ -25,20 +50,22 @@
   font-size: 1.2em;
   color: black;
   background-color: white;
-  border: none;
+  border: 1px solid white;
   border-radius: 10%;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 #button:hover {
-  animation-name: buttonHover;
+  /* animation-name: buttonHover;
   animation-duration: 0.5s;
-  animation-iteration-count: 1;
+  animation-iteration-count: 1; */
   box-shadow: 0 0 10px white;
+  font-size: 1.25em;
 }
 
 #button:active {
-  transform: scale(0.6);
+  transform: scale(0.95);
   color: black;
   background-color: white;
 }
